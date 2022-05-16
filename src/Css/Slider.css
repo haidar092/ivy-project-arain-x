@@ -1,0 +1,216 @@
+.top {
+  height: 70px;
+  background: #284436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slider-heading {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.slider-button {
+  border-radius: 4px;
+  background: #fff;
+  color: #284436;
+  margin-left: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 600;
+}
+.crousel {
+  cursor: pointer;
+}
+.slick-slider {
+  height: 460px;
+  width: 100%;
+  overflow: hidden;
+}
+.slick-dots li button:before {
+  font-size: 14px !important;
+  color: rgb(150, 158, 171) !important;
+}
+li.slick-active button:before {
+  color: white !important;
+}
+.slick-dots {
+  bottom: 10% !important;
+  z-index: 10000;
+  font-size: 20px;
+}
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 10;
+  background: none !important;
+  color: white !important;
+}
+.slick-next:before,
+.slick-prev::before {
+  font-size: 35px !important;
+ 
+}
+.slick-list {
+  overflow: hidden;
+}
+
+button {
+  z-index: 1;
+}
+.wrap {
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 460px;
+  background: url("../Assets/slider_3.jpg");
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: left;
+  color: #fff;
+  position: relative;
+}
+.wrap-1{
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 460px;
+  background: url("../Assets/slider_1.png");
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: left;
+  color: #fff;
+  position: relative;
+}
+.wrap-2{
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 460px;
+  background: url("../Assets/Divan Beds.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: left;
+  color: #fff;
+  position: relative;
+}
+.gradiant {
+  height: 460px;
+  width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: left;
+  background: transparent
+    linear-gradient(
+      270deg,
+      #ffffff00 0%,
+      #00000059 25%,
+      #000000e6 64%,
+      #000000 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+.gradiant h1 {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  align-items: center;
+  padding-left: 60px;
+  font-size: 48px;
+}
+.gradiant p {
+  position: absolute;
+  top: 55%;
+
+  padding-left: 60px;
+  font-size: 24px;
+  text-align: center;
+  align-items: center;
+}
+.wrap img {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  transition-duration: 300ms;
+}
+.range {
+  border-radius: 10px;
+  height: 460px;
+  overflow: hidden;
+}
+.range-image {
+  height: 460px;
+  padding: 0;
+  margin: 0;
+}
+.range-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-data {
+  width: 50%;
+  background: #284436;
+}
+.range-slider-data {
+  margin-top: 26%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.range-slider-data h1 {
+  text-align: center;
+  align-items: center;
+  display: block;
+  display: flex;
+  justify-content: center;
+  color: #d1a461;
+  font-size: 36px;
+  font-weight: bold;
+}
+.range-slider-data p {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 17px;
+}
+.slider-buttons {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  font-size: 17px;
+}
+.slider-buttons button {
+  background: transparent;
+  padding: 10px 14px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  color: #fff;
+}
+.range-top {
+  font-size: 36px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+.range-heading {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}

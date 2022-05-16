@@ -1,0 +1,45 @@
+.Revies-heading {
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+}
+.review-card {
+  border: 15px solid #f9f9fb;
+  border-radius: 5px;
+  height: 280px;
+}
+.inner-card {
+  background: #fff;
+  box-shadow: 5px 0px 10px #00000029;
+  height: 100%;
+  border-radius: 4px;
+}
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.reviews-name,
+.client {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+}
+.message {
+  font-size: 14px;
+  padding: 0 10px;
+  text-align: center;
+  align-items: center;
+}
+.reviews .slick-dots {
+  bottom: 10% !important;
+  z-index: 10000;
+  font-size: 20px;
+}
+.reviews .slick-slider {
+  height: 360px;
+  width: 100%;
+  overflow: hidden;
+}
