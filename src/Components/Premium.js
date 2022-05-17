@@ -3,8 +3,8 @@ import d1 from "../Assets/Clipping Mask Your Image.jpg";
 import "../Css/Premium.css";
 const Premium = () => {
   return (
-    <div className="container my-3">
-      <div className="row">
+    <div className="container my-3 ">
+      <div className="row mx-5 premium py-5">
         <div className="col-md-6">
           <div className="data-container">
             <h1>

@@ -1,13 +1,5 @@
 const dataa = [
-  {
-    id: 1,
-    name: "Venetain Blinds",
-    img: "/Assets/Venetain.jpg",
-    heading: "Good quality at an outstanding price",
-    rating:"5",
-    client:"David Colbourne",
-    message:"The blinds appear to be good quality and we're very easy to self-fit. I'm very happy with both the blinds and the price."
-  },
+  
   {
     id: 2,
     name: "Vertical blinds",
@@ -18,6 +10,15 @@ const dataa = [
     message:"Good price, good service, good quality, have used before and would certainly use again."
   },
   {
+    id: 1,
+    name: "Venetain Blinds",
+    img: "/Assets/Venetain.jpg",
+    heading: "Good quality at an outstanding price",
+    rating:"5",
+    client:"David Colbourne",
+    message:"The blinds appear to be good quality and we're very easy to self-fit. I'm very happy with both the blinds and the price."
+  },
+  {
     id: 3,
     name: "Metal blinds",
     img: "/Assets/metal blinds.jpg",
@@ -26,6 +27,7 @@ const dataa = [
     client:"Patricia",
     message:"Easy to order, turned up sooner that estimated,updates on delivery time, fit really well, look great."
   },
+  
   {
     id: 4,
     name: "Wooden Blinds",

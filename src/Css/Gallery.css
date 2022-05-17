@@ -2,19 +2,22 @@
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  margin-top: 7px;
 }
 .gallery-main h3 {
   position: absolute;
-  bottom: 3%;
+word-wrap: none;
+  bottom: 4%;
   color: #fff;
-  left: 30%;
-  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
   text-shadow: 0px 3px 6px #00000029;
   font-size: 28px;
   font-weight: 400;
+  text-transform: capitalize;
 }
 .gallery-imagecontaner {
- 
   height: 400px;
 }
 .gallery-imagecontaner img {

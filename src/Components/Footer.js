@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="container-fluid footer-background">
       <div className="container ">
-        <div className="row py-4 footer-border mb-3">
+        <div className="row py-4 footer-border mb-3 mx-5">
           <div className="col-md-3">
             <div className="footer-image">
               <img src={logo} alt="logo" />
@@ -22,7 +22,7 @@ const Footer = () => {
                 <HiLocationMarker />
               </div>
               <div className="footer-text">
-                Ivy Beds & Blinds, Potters Lane, Wednesbury, WS10 7LH
+                IVY Beds & Blinds, Potters Lane, Wednesbury, WS10 7LH
               </div>
             </div>
             <div className="footer-location my-3">
@@ -94,8 +94,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="copy-write pb-4">
-        &copy; 2022 Ivy Beds & Blinds
+        <div className="copy-write pb-4 mx-5">
+        &copy; 2022 IVY Beds & Blinds.All Rights Reserved
         </div>
       </div>
     </div>

@@ -9,6 +9,8 @@
 .slider-heading {
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
 }
 .slider-button {
   border-radius: 4px;
@@ -18,6 +20,9 @@
   padding: 10px 20px;
   text-align: center;
   font-weight: 600;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 .crousel {
   cursor: pointer;
@@ -27,17 +32,31 @@
   width: 100%;
   overflow: hidden;
 }
+.range-slider-main .slick-slider {
+  height: 558px;
+  width: 100%;
+  overflow: hidden;
+}
+.range-slider-main .slick-dots {
+  bottom: 4% !important;
+  z-index: 10000;
+  font-size: 20px;
+  opacity: 1 !important;
+}
 .slick-dots li button:before {
   font-size: 14px !important;
-  color: rgb(150, 158, 171) !important;
+  color: #d9d9d9 !important;
+  opacity: 1 !important;
 }
 li.slick-active button:before {
   color: white !important;
+  opacity: 1 !important;
 }
 .slick-dots {
-  bottom: 10% !important;
+  bottom: 4% !important;
   z-index: 10000;
   font-size: 20px;
+  opacity: 1 !important;
 }
 .slick-prev {
   left: 3% !important;
@@ -52,7 +71,6 @@ li.slick-active button:before {
 .slick-next:before,
 .slick-prev::before {
   font-size: 35px !important;
- 
 }
 .slick-list {
   overflow: hidden;
@@ -67,6 +85,7 @@ button {
   width: 100%;
   height: 460px;
   background: url("../Assets/slider_3.jpg");
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -74,7 +93,7 @@ button {
   color: #fff;
   position: relative;
 }
-.wrap-1{
+.wrap-1 {
   cursor: pointer;
   overflow: hidden;
   width: 100%;
@@ -82,17 +101,18 @@ button {
   background: url("../Assets/slider_1.png");
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
   text-align: center;
   align-items: left;
   color: #fff;
   position: relative;
 }
-.wrap-2{
+.wrap-2 {
   cursor: pointer;
   overflow: hidden;
   width: 100%;
   height: 460px;
-  background: url("../Assets/Divan Beds.png");
+  background: url("../Assets/slider_2.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -102,11 +122,46 @@ button {
   color: #fff;
   position: relative;
 }
+.wrap-3 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 460px;
+  background: url("../Assets/slider_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: left;
+  color: #fff;
+  position: relative;
+}
+.wrap-4 {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 460px;
+  background: url("../Assets/slider_5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.wrap-3 img {
+  position: absolute;
+  z-index: 1000;
+  left: 8%;
+  top: 6%;
+}
 .gradiant {
   height: 460px;
-  width: 40%;
+  width: 50%;
   position: relative;
-  display: flex;
   justify-content: center;
   text-align: center;
   align-items: left;
@@ -121,21 +176,16 @@ button {
     0% 0% no-repeat padding-box;
 }
 .gradiant h1 {
-  position: absolute;
-  top: 30%;
-  text-align: center;
-  align-items: center;
+  padding-top: 18%;
   padding-left: 60px;
   font-size: 48px;
+  font-weight: bold;
 }
 .gradiant p {
-  position: absolute;
-  top: 55%;
-
+  display: block;
   padding-left: 60px;
   font-size: 24px;
-  text-align: center;
-  align-items: center;
+  line-height: 24px;
 }
 .wrap img {
   width: 100%;
@@ -146,11 +196,11 @@ button {
 }
 .range {
   border-radius: 10px;
-  height: 460px;
+  height: 550px;
   overflow: hidden;
 }
 .range-image {
-  height: 460px;
+  height: 558px;
   padding: 0;
   margin: 0;
 }
@@ -160,11 +210,10 @@ button {
   object-fit: cover;
 }
 .slider-data {
-  width: 50%;
   background: #284436;
 }
 .range-slider-data {
-  margin-top: 26%;
+  margin-top: 30%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -185,14 +234,14 @@ button {
   display: flex;
   justify-content: center;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
 }
 .slider-buttons {
   text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
-
+  font-weight: 600;
   font-size: 17px;
 }
 .slider-buttons button {
@@ -201,6 +250,8 @@ button {
   border: 2px solid #ffffff;
   border-radius: 4px;
   color: #fff;
+
+  outline: none;
 }
 .range-top {
   font-size: 36px;
@@ -213,4 +264,18 @@ button {
   text-align: center;
   align-items: center;
   font-weight: bold;
+}
+
+/* media queries */
+@media (max-width: 500px) {
+  .range-image {
+    height: 290px;
+    padding: 0;
+    margin: 0;
+  }
+  .range-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

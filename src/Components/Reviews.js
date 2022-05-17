@@ -7,17 +7,54 @@ import Star from "./Star";
 import dataa from "../Data";
 const Reviews = () => {
   // settings for slider
-  let settings = {
+  var settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    arrows: false,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1283,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1026,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
   return (
     <div className="container my-5">
-      <div className="row my-4">
+      <div className="row my-4 mx-4">
         <div className="col-12 reviews">
           <div className="Revies-heading">
             Hear From Our Customers in Their Own Words
@@ -31,8 +68,8 @@ const Reviews = () => {
                       <Star rat={prod.rating} />
                     </div>
                     <div className="reviews-name">{prod.heading}</div>
-                    <div className="message py-3 pb-5">{prod.message}</div>
-                    <div className="client py-2">{prod.client}</div>
+                    <div className="message py-1 pb-1">{prod.message}</div>
+                    <div className="client ">{prod.client}</div>
                   </div>
                 </div>
               );

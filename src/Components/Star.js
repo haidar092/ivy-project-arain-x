@@ -6,7 +6,7 @@ const Star = ({rat}) => {
       count={5}
       value={rat}
       edit={false}
-      size={27}
+      size={20}
       isHalf={true}
       activeColor="#ffd700"
     />

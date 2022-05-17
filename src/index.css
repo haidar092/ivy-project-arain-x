@@ -49,6 +49,7 @@ body {
   width: 100vw;
   background: #F9F9FB;
   overflow-x: hidden !important;
+  color: #000;
 }
 
 code {

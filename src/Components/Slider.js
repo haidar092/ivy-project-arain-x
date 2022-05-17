@@ -3,6 +3,7 @@ import "../Css/Slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import tag from "../Assets/5 year guarantee-2.png";
 
 const ImgSlider = () => {
   // settings for slider
@@ -47,8 +48,21 @@ const ImgSlider = () => {
         </div>
         <div className="wrap-2">
           <div className="gradiant">
-            <h1>3 VERTICAL BLINDS FOR <br/> £79</h1>
+            <h1>3 VERTICAL BLINDS FOR £79</h1>
             <p>Explore the Complete Range</p>
+          </div>
+        </div>
+        <div className="wrap-3">
+          <img src={tag} alt="tag" />
+          <div className="gradiant">
+            <h1>EASY & SECURE SHOPPING</h1>
+            <p>From Manufacturer to Your Doorstep <br/> Shop Our Range Now</p>
+          </div>
+        </div>
+        <div className="wrap-4">
+          <div className="gradiant">
+            <h1>10% OFF ON BEDS COLLECTION</h1>
+            <p>Inclusive of Ottoman Storage Beds Explore Our <br/>Newest Collection Here</p>
           </div>
         </div>
       </Slider>

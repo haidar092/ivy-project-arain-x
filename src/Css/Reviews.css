@@ -1,45 +1,58 @@
 .Revies-heading {
   text-align: center;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: bold;
 }
 .review-card {
   border: 15px solid #f9f9fb;
   border-radius: 5px;
-  height: 280px;
+  height: 187px;
 }
 .inner-card {
   background: #fff;
   box-shadow: 5px 0px 10px #00000029;
   height: 100%;
-  border-radius: 4px;
+  border-radius: 10px;
+  position: relative;
 }
 .star {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 3px;
 }
-.reviews-name,
+.reviews-name {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+}
 .client {
-  font-size: 17px;
+  position: absolute;
+  width: 100%;
+  font-size: 14px;
+  bottom: 2%;
   font-weight: 600;
   text-align: center;
   align-items: center;
 }
 .message {
-  font-size: 14px;
+  font-size: 12px;
   padding: 0 10px;
   text-align: center;
   align-items: center;
 }
 .reviews .slick-dots {
-  bottom: 10% !important;
+  bottom: 6% !important;
   z-index: 10000;
   font-size: 20px;
 }
 .reviews .slick-slider {
-  height: 360px;
+  height: 220px;
   width: 100%;
   overflow: hidden;
+}
+.reviews li.slick-active button:before {
+  color: #284436 !important;
+  opacity: 1 !important;
 }
